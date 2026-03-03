@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Maths Club ASIET Logo" class="logo-img">
+            <h1>Maths Club ASIET</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#execom">Execom</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- Floating gradient blobs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+
+        <div class="hero-content">
+            <h2>Welcome to the</h2>
+            <h1 class="highlight">Maths Club ASIET</h1>
+            <p>Exploring the beauty of numbers, puzzles, and problem-solving!</p>
+            <a href="#activities" class="btn-primary">Join Us Today <span class="arrow">&#10095;</span></a>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title text-navy">About Us</h2>
+            <div class="title-underline"></div>
+            <p class="about-text">
+                The Maths Club is a vibrant community for students who are passionate about numbers and logical
+                thinking. We organize interactive workshops, exciting competitions, and collaborative problem-solving
+                sessions to sharpen mathematical skills and celebrate the elegance of mathematics in everyday life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities" id="activities">
+        <div class="container">
+            <h2 class="section-title text-navy">Our Activities</h2>
+            <div class="title-underline"></div>
+
+            <div class="activities-grid" id="activities-container">
+                <!-- Activities will be injected here by JS -->
+                <div class="loading-spinner">Loading activities...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="events" id="events">
+        <div class="container">
+            <h2 class="section-title text-navy">Upcoming Events</h2>
+            <div class="title-underline"></div>
+
+            <div class="events-grid" id="events-container">
+                <!-- Events will be injected here by JS -->
+                <div class="loading-spinner">Loading upcoming events...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Execom Section -->
+    <section class="execom" id="execom">
+        <div class="container">
+            <h2 class="section-title text-navy">Our Execom</h2>
+            <div class="title-underline"></div>
+            <p class="execom-subtitle">Meet the executive committee members who make the Maths Club thrive.</p>
+            <div class="execom-grid" id="execom-container">
+                <!-- Execom photos will be injected here by JS -->
+                <div class="loading-spinner">Loading Execom photos...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title text-white">Get In Touch</h2>
+            <div class="contact-grid">
+                <!-- Email Card -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p id="display-email">asietmathematicsclub1234@gmail.com</p>
+                </div>
+                <!-- Phone Card -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p id="display-phone">+91 7736858318</p>
+                </div>
+                <!-- Instagram Card -->
+                <a href="https://www.instagram.com/mathsclub_asiet" target="_blank" class="contact-card instagram-link"
+                    id="display-instagram-link">
+                    <div class="contact-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <p id="display-instagram-handle">@mathsclub_asiet</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
